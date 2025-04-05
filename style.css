@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+/* Switch Case */
+#case {
+    width: 12vw;
+    height: 25vh;
+    background-color: #7a7a7a;
+    border-radius: 1vw;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Upper Part */
+#uperPart {
+    width: 11vw;
+    height: 24vh;
+    background-color: #3e3e3e;
+    border-radius: 0.8vw;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+/* Stylish Switch Button */
+#btn {
+    width: 9vw;
+    height: 18vh;
+    background: linear-gradient(to bottom, #999, #666);
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    border-radius: 1vw;
+    box-shadow: inset -3px -6px 10px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+#btn:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Screws */
+.scrue {
+    width: 0.5vw;
+    height: 0.5vw;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #ddd;
+    position: absolute;
+}
+
+.leftUP {
+    top: 42%;
+    left: 61.5%;
+}
+
+.rightUP {
+    top: 42%;
+    left: 68%;
+}
+
+.leftDown {
+    top: 57%;
+    left: 61.5%;
+}
+
+.rightDown {
+    top: 57%;
+    left: 68%;
+}
+
+/* Bulb Glass */
+#glass {
+    width: 10vw;
+    height: 10vw;
+    position: fixed;
+    top: 44.5%;
+    left: 21%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,153,0.6) 0%, rgba(255,255,0,0.3) 50%, rgba(85,69,0,0.5) 100%);
+    border: 2px solid #e0d800;
+}
+
+/* Frame */
+#Frame {
+    width: 4vw;
+    height: 2.5vw;
+    background-color: #444;
+    position: fixed;
+    left: 24%;
+    top: 39.9%;
+    border: 1px solid #222;
+    box-shadow: inset -1px 0px 7px rgba(0, 0, 0, 0.47);
+    border-radius: 0.3vw;
+}
+
+/* Holder */
+#holder {
+    width: 2.5vw;
+    height: 1.5vw;
+    background-color: darkslategray;
+    position: fixed;
+    top: 38.5%;
+    left: 24.77%;
+    border-radius: 0.2vw;
+    box-shadow: inset -1px 0px 3px rgba(0, 0, 0, 0.47);
+}
+
+/* Wires */
+#wire1 {
+    width: 40vw;
+    height: 1.2vh;
+    background-color: gray;
+    position: fixed;
+    top: 17.4%;
+    left: 25.6%;
+    box-shadow: inset -4px 3px 5px rgba(0, 0, 0, 0.47);
+}
+
+#wire2 {
+    width: 1vw;
+    height: 20vh;
+    background-color: gray;
+    position: fixed;
+    top: 18.56%;
+    left: 25.567%;
+}
+
+#wire3 {
+    width: 1vw;
+    height: 20vh;
+    background-color: gray;
+    position: absolute;
+    top: 17.5%;
+    left: 64.4%;
+    box-shadow: inset 2px -5px 5px rgba(0, 0, 0, 0.47);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    #case, #uperPart {
+        width: 30vw;
+        height: auto;
+    }
+
+    #btn {
+        width: 25vw;
+        height: 20vh;
+    }
+
+    #glass {
+        width: 20vw;
+        height: 20vw;
+        top: 35%;
+        left: 10%;
+    }
+
+    .scrue {
+        width: 1.2vw;
+        height: 1.2vw;
+    }
+
+    #Frame, #holder {
+        width: 6vw;
+        left: 15%;
+    }
+
+    #wire1 {
+        width: 80vw;
+    }
+}
+
+#glass.glow {
+    background: radial-gradient(circle, rgba(255,255,153,1) 0%, rgba(255,255,0,0.6) 50%, rgba(255,200,0,0.5) 100%);
+    box-shadow: 0 0 30px 10px rgba(255, 255, 153, 0.8);
+    border: 2px solid #ffff00;
+}
